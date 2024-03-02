@@ -1,0 +1,239 @@
+/* .center {
+    text-align: center;
+    background: #f8fafb;
+    padding: 150px 0;
+  }
+  
+  .username {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+  }
+  
+  input {
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    padding-left: 30px;
+    font-size: 16px;
+    color: #a5adb3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    box-shadow: 0 0px 10px rgba(21, 19, 19, 0.1);
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  
+  .search-btn {
+    position: absolute;
+    background: #ff545a;
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .search-btn:hover {
+    background-color: #f43032;
+  }
+  
+  .table {
+    width: 50%;
+    margin: 0 auto; 
+    margin-top: 20px;
+    border-collapse: collapse;
+    align-content: center;
+  }
+  
+  .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table td:first-child {
+    font-weight: bold;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    margin: 20px 0px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-top: 20px;
+    color: #7b8088;
+    font-size: 16px;
+    font-weight: 500;
+  }
+   */
+   .center {
+    text-align: center;
+    background: #f8fafb;
+    padding: 50px 0;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.movie-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #555;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn {
+    background: #ff545a;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-btn:hover {
+    background-color: #f43032;
+}
+
+.movie-details {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.movie-details h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table td:first-child {
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-top: 20px;
+    color: #7b8088;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3 {
+    margin: 30px 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

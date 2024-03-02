@@ -1,0 +1,27 @@
+<section id="works" class="works">
+    <div class="container">
+        <div class="section-header">
+            <h2>how it works</h2>
+            <p>Learn More about how our website works</p>
+        </div><!--/.section-header-->
+        <div class="works-content">
+            <div class="row">
+                <div class="col-md-4 col-sm-6" *ngFor="let work of worksData">
+                    <div class="single-how-works">
+                        <div class="single-how-works-icon">
+                            <i class="{{ work.iconClass }}"></i>
+                        </div>
+                        <h2><a href="#">{{ work.title }}</a></h2>
+                        <p>
+                            {{ work.description }}
+                        </p>
+                        <button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+                            read more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+
+</section>

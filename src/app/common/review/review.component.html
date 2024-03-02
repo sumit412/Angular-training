@@ -1,0 +1,34 @@
+<!--reviews start -->
+<section id="reviews" class="reviews">
+    <div class="section-header">
+        <h2>clients reviews</h2>
+        <p>What our client say about us</p>
+    </div><!--/.section-header-->
+    <div class="reviews-content">
+        <div class="testimonial-carousel">
+            <div class="single-testimonial-box" *ngFor="let testimonial of testimonials">
+                <div class="testimonial-description">
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <img [src]="testimonial.image" alt="clients">
+                        </div><!--/.testimonial-img-->
+                        <div class="testimonial-person">
+                            <h2>{{ testimonial.name }}</h2>
+                            <h4>{{ testimonial.location }}</h4>
+                            <div class="testimonial-person-star">
+                                <i class="fa fa-star" *ngFor="let star of testimonial.stars"></i>
+                            </div>
+                        </div><!--/.testimonial-person-->
+                    </div><!--/.testimonial-info-->
+                    <div class="testimonial-comment">
+                        <p>
+                            {{ testimonial.comment }}
+                        </p>
+                    </div><!--/.testimonial-comment-->
+                </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+        </div>
+    </div>
+
+</section><!--/.reviews-->
+<!--reviews end -->
