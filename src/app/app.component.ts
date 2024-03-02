@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Day2';
   languages: string[] = ['English', 'Bangla', 'Arabic'];
-  currencies: string[] = ['USD', 'EUR', 'INR'];
+  currencies: string[] = ['USD', 'BDT', 'INR'];
+  
+
+receivedMessage: string | undefined;
+
+  receiveMessage(message: string) {
+    this.receivedMessage = message;
+  }
 }

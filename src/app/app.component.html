@@ -1,5 +1,6 @@
-<app-header [languages]="languages" [currencies ]="currencies"></app-header>
-<!-- <app-child [languages]="languages"></app-child> -->
+<!-- <app-header></app-header> -->
+<app-header [languages]="languages" [currencies]="currencies"></app-header>
 <app-top-area></app-top-area>
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer (messageEvent)="receiveMessage($event)"></app-footer>
+<p>Message from child: {{ receivedMessage }}</p>
